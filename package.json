@@ -1,0 +1,30 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is react learning by teja",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SivaTeja36/ReactLearning.git"
+  },
+  "keywords": [
+    "react",
+    "learning",
+    "teja"
+  ],
+  "author": "Teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SivaTeja36/ReactLearning/issues"
+  },
+  "homepage": "https://github.com/SivaTeja36/ReactLearning#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
