@@ -1,6 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import Header from "./src/Header";
+import Body from "./src/Body";
 
-const header = React.createElement("h1", {id: "child"}, "Learning React");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(header);    
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+const root = createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
