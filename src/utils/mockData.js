@@ -689,4 +689,4 @@ const restaurants = [
   },
 ];
 
-export { restaurants };
+export default restaurants;

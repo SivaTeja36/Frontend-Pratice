@@ -1,4 +1,4 @@
-import {restaurants} from './MockData'
+import {CDN_URL} from "../utils/constants"
 
 const RestaurantCard = ({ restaurant }) => {
 
@@ -12,7 +12,7 @@ const RestaurantCard = ({ restaurant }) => {
             <img 
                 className="res-logo" 
                 alt="res-logo" 
-                src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${info.cloudinaryImageId}`} 
+                src={CDN_URL + info.cloudinaryImageId} 
             />
 
             <h3>{info.name}</h3>
@@ -23,19 +23,4 @@ const RestaurantCard = ({ restaurant }) => {
     )
 }
 
-//---
-
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search">Search</div>
-            <div className="res-container">
-                {
-                    restaurants.map((restaurant) => <RestaurantCard key={restaurant.info.id} restaurant={restaurant}/>)
-                }
-            </div>
-        </div>
-    )
-}
-
-export default Body
+export default RestaurantCard;

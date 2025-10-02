@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
-import Header from "./src/Header";
-import Body from "./src/Body";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const AppLayout = () => {
   return (
