@@ -30,15 +30,9 @@ const Body = () => {
         <div className="body">
             <div className="search">Search</div>
             <div className="res-container">
-                <RestaurantCard restaurant={restaurants[0]} />
-                <RestaurantCard restaurant={restaurants[1]} />
-                <RestaurantCard restaurant={restaurants[2]} />
-                <RestaurantCard restaurant={restaurants[3]} />
-                <RestaurantCard restaurant={restaurants[4]} />
-                <RestaurantCard restaurant={restaurants[5]} />
-                <RestaurantCard restaurant={restaurants[6]} />
-                <RestaurantCard restaurant={restaurants[7]} />
-                <RestaurantCard restaurant={restaurants[8]} />
+                {
+                    restaurants.map((restaurant) => <RestaurantCard key={restaurant.info.id} restaurant={restaurant}/>)
+                }
             </div>
         </div>
     )
