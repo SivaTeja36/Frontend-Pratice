@@ -8,13 +8,9 @@ const Body = () => {
 
     setTimeout(() => {
         updateListOfRestaurants(restaurants)
-    }, 2000)
+    }, 1000)
 
-    if (listOfRestaurants.length === 0) {
-        return <Shimmer />
-    } 
-
-    return (
+    return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className="body">
             <div className="filter"><button className='filter-btn' onClick={ () => {
                 const filteredRestaurantsList = listOfRestaurants.filter((restaurant) => restaurant.info.avgRating > 4.2);
